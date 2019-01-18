@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>freeCodeCamp - Pomodor.io</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <html>
+<link href="https://fonts.googleapis.com/css?family=Anton|Poppins|Space+Mono" rel="stylesheet">
+
+<body>
+  <div class="container">
+    <div class="controls">
+      <div class="ctrl" id="break">
+        <p><em>BREAK LENGTH</em><br /><button id="decBreak" onclick="controls.break.update(-1)">-</button><b class="display" id="breakDisp">5</b><button onclick="controls.break.update(1)" id="incBreak">+</button></p>
+      </div>
+      <div class="ctrl" id="session">
+        <p><em>SESSION LENGTH</em><br /><button onclick="controls.session.update(-1)" id="decSes">-</button><b class='display' id="sesDisp">20</b><button onclick='controls.session.update(1)' id="incSes">+</button></p>
+      </div>
+    </div>
+    <div id="timer">
+      <div id="circle">
+        <svg height="300" width="300"><g id="C" transform="rotate(-90 150 150)"><circle cx="150" cy="150" r="145"/></g>
+          <text id="typeLabel" x='150' y='100' fill="white">Session</text>
+          <text id="timeLeft" x="225" y="160" fill="white">20:00</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <audio id="alarmSound" crossOrigin='true'><source src="audio/ZenBell.mp3"/></audio>   <!--https://www.dropbox.com/s/mopxw0a66snclwi/Zen%20Buddhist%20Temple%20Bell-SoundBible.com-331362457.mp3-->
+ 
+</body>
+
+</html>
+ 
+    <script src="js/index.js"></script>
+
+</body>
+</html>

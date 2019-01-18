@@ -1,0 +1,80 @@
+html,body{
+  background-color: #1a1a1a;
+  color: #ddd;
+}
+.controls{
+  font-family: "Anton", san-serif;
+  margin:5px;
+  text-align:center;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ctrl{
+  margin:30px;
+}
+span{
+  padding:5px;
+  font-size:30px
+}
+em{
+  text-decoration: none;
+}
+#timer{
+  width:100%;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+circle{
+  fill: rgba(100,100,100,.1);
+  stroke: green;
+  stroke-width:5;
+  stroke-dasharray: calc(145*2*3.1415);
+  stroke-dashoffset: calc(145*2*3.1415*(1 - ));
+  box-shadow: 1px 5px #111;
+}
+#circle{
+
+}
+
+svg{
+
+  margin: 0 auto;
+}
+#timeLeft{
+  font-size: 45px;
+  font-family: "Space Mono", monospace;
+  text-anchor: end;
+  
+   
+}
+b{
+  font-size:30px;
+}
+button{
+  background-color: #1a1a1a;
+  color:white;
+  font-family: "Anton", san-serif;
+  font-size:30px;
+  border:none;
+}
+button:active{
+  border:none;
+}
+
+#typeLabel{
+  color:white;
+  font-family: "Anton",san-serif;
+  text-anchor:middle;
+}
