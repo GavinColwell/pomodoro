@@ -5,10 +5,10 @@ var controls = {
     valueDOM: document.getElementById("breakDisp"),
     update: function(sgn){
       if(sgn === -1){
-        this.value = (this.value === 0) ? 0 : this.value - 1;
+        this.value -= (this.value === 0) ? 0 : 1;
       }
       else{
-        this.value = this.value + 1;
+        this.value += 1;
       }
       this.valueDOM.innerHTML = this.value;
     }
@@ -27,6 +27,7 @@ var controls = {
       this.valueDOM.innerHTML = this.value;
       
       if(!(timer.running)){
+        timer.onBreak = false;
         timer.clock.timeId.innerHTML = secToMin(this.value*60);
         timer.secondsLeft = this.value*60;
         timer.startSeconds = this.value*60;
@@ -80,8 +81,8 @@ var timer = {
 
 function secToMin(seconds){
   var minutes = Math.floor(seconds/60);
-  var mins = (minutes >= 10) ? minutes : "0" + minutes
-  var secondsLeft = seconds % 60
+  var mins = (minutes >= 10) ? minutes : "0" + minutes;
+  var secondsLeft = seconds % 60;
   var secs = (secondsLeft >= 10) ? secondsLeft : "0" + secondsLeft;
   return mins + ":" + secs;
 }
